@@ -43,7 +43,7 @@ Cataluña, España
 
 ## Contacto
 
-Email: taftaylor@gmail.com  
+Email: t.a.f.taylor@gmail.com  
 GitHub: https://github.com/bertietaylor  
 LinkedIn: https://www.linkedin.com/in/bertie-taylor-70965569
 
