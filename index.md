@@ -1,33 +1,54 @@
-# Bertie Taylor
+# Bert Taylor
 
-## Ingeniero de software autónomo en España
+## Software Engineer · Python · Backend · APIs
 
-Ingeniero de software especializado en Python, backend, integraciones API y arquitectura de sistemas.
+Autónomo en España  
+Cataluña · Trabajo remoto
 
-Trabajo con empresas internacionales y estoy ampliando mi presencia profesional en el mercado español.
+Ingeniero de software autónomo especializado en Python, backend, integraciones API y arquitectura de sistemas.
+
+Trabajo con empresas internacionales y estoy desarrollando también mi actividad profesional en el mercado español.
+
+---
 
 ## Servicios
 
-- Desarrollo backend con Python y Django
-- Integraciones con APIs y plataformas SaaS
-- Automatización y herramientas internas
-- Arquitectura de sistemas y mejora de rendimiento
-- Consultoría técnica para productos y plataformas web
+- Desarrollo backend con Python y Django  
+- Integraciones con APIs y plataformas SaaS  
+- Automatización de procesos y herramientas internas  
+- Arquitectura de sistemas y mejora de rendimiento  
+- Consultoría técnica para productos y plataformas web  
+
+---
+
+## Especialidades técnicas
+
+Python · Django · SQL · APIs · Docker · Git · AWS
+
+---
 
 ## Perfil profesional
 
-Tengo experiencia trabajando en productos software reales, con foco en backend, integraciones, rendimiento y calidad técnica. Me interesa colaborar con empresas que necesiten apoyo en desarrollo, arquitectura o automatización.
+Tengo experiencia trabajando en productos software reales con foco en backend, integraciones, rendimiento y calidad técnica.
 
-## Tecnologías
+Me interesa colaborar con empresas que necesiten apoyo en desarrollo, arquitectura o automatización de sistemas.
 
-Python · Django · SQL · APIs · Docker · Git · AWS
+---
 
 ## Ubicación
 
 Cataluña, España
 
+---
+
 ## Contacto
 
-- Email: taftaylor@gmail.com
-- GitHub: https://github.com/bertietaylor
-- LinkedIn: https://www.linkedin.com/in/bertie-taylor-70965569
+Email: taftaylor@gmail.com  
+GitHub: https://github.com/bertietaylor  
+LinkedIn: https://www.linkedin.com/in/bertie-taylor-70965569
+
+---
+
+Actividad profesional registrada a nombre de:  
+**Theodore Albert Francis Taylor**  
+Autónomo en España
