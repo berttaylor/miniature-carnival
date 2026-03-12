@@ -1,11 +1,11 @@
 # Bertie Taylor
 
-### Software Engineer · Python/Django · Backend · APIs
+### Software Engineer · Python · Backend · APIs
 
 Autónomo en España  
 Cataluña · Trabajo remoto
 
-Ingeniero de software autónomo especializado en desarrollo backend con Python, integraciones API y arquitectura de sistemas.
+Ingeniero de software autónomo especializado en desarrollo backend con Python/Django, integraciones API y arquitectura de sistemas.
 
 Trabajo con empresas internacionales y estoy desarrollando también mi actividad profesional en el mercado español.
 
