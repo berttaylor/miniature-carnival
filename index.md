@@ -1,6 +1,6 @@
 # Bert Taylor
 
-## Software Engineer · Python · Backend · APIs
+### Software Engineer · Python · Backend · APIs
 
 Autónomo en España  
 Cataluña · Trabajo remoto
