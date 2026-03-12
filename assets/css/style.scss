@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Improve page spacing */
+.page-header {
+  padding: 3rem 1rem;
+}
+
+/* Make headings slightly tighter */
+.main-content h2 {
+  margin-top: 2.2rem;
+}
+
+/* Improve paragraph readability */
+.main-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Clean up lists */
+.main-content ul {
+  margin-top: 0.5rem;
+}
+
+/* Better contact links */
+.main-content a {
+  font-weight: 500;
+}
+
+/* Make separators cleaner */
+hr {
+  margin: 2.5rem 0;
+}
