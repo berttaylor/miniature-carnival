@@ -1,11 +1,11 @@
 # Bertie Taylor
 
-## Software Engineer · Python · Backend · APIs
+### Software Engineer · Python/Django · Backend · APIs
 
 Autónomo en España  
 Cataluña · Trabajo remoto
 
-Ingeniero de software autónomo especializado en Python, backend, integraciones API y arquitectura de sistemas.
+Ingeniero de software autónomo especializado en desarrollo backend con Python, integraciones API y arquitectura de sistemas.
 
 Trabajo con empresas internacionales y estoy desarrollando también mi actividad profesional en el mercado español.
 
@@ -23,15 +23,52 @@ Trabajo con empresas internacionales y estoy desarrollando también mi actividad
 
 ## Especialidades técnicas
 
-Python · Django · SQL · APIs · Docker · Git · AWS
+Python · Django · FastAPI · SQL · APIs · Docker · Git · AWS  
+Celery · HTMX · Integraciones SaaS · Automatización
 
 ---
 
-## Perfil profesional
+## Experiencia profesional
 
-Tengo experiencia trabajando en productos software reales con foco en backend, integraciones, rendimiento y calidad técnica.
+### CybSafe — Senior Backend Engineer  
+2022 – Presente
 
-Me interesa colaborar con empresas que necesiten apoyo en desarrollo, arquitectura o automatización de sistemas.
+Empresa SaaS de ciberseguridad.
+
+- Desarrollo de sistemas backend con Python y Django  
+- Diseño de un motor de workflows orientado a eventos para automatización de procesos  
+- Implementación de un sistema de segmentación dinámica de usuarios para campañas y automatización  
+- Integraciones con plataformas como Slack, Microsoft Teams y servicios de Microsoft Security  
+
+### A Human Future — Software Engineer  
+2021 – 2022
+
+- Desarrollo de un CMS y constructor de encuestas utilizando Django y HTMX  
+- Implementación de funcionalidades clave en una plataforma de comparación de precios  
+- Sistemas de cuentas de usuario, listings y pagos con Stripe  
+
+---
+
+## Proyectos
+
+### QuedarBien
+
+Aplicación de recomendación de regalos basada en afiliación de Amazon.
+
+Tecnologías utilizadas:  
+Python · FastAPI · AWS · LangChain · LangGraph
+
+### Collabl
+
+Aplicación de gestión de tareas colaborativas en tiempo real desarrollada con Django y HTMX.
+
+---
+
+## Certificaciones
+
+- AWS Certified Cloud Practitioner  
+- Harvard CS50 – Introduction to Computer Science  
+- Harvard CS50 – Computer Science for Business Professionals  
 
 ---
 
@@ -43,12 +80,12 @@ Cataluña, España
 
 ## Contacto
 
-Email: t.a.f.taylor@gmail.com  
+Email: taftaylor@gmail.com  
 GitHub: https://github.com/bertietaylor  
-LinkedIn: https://www.linkedin.com/in/bertie-taylor-70965569
+LinkedIn: https://www.linkedin.com/in/bertie-taylor-70965569  
 
 ---
 
-Actividad profesional registrada a nombre de:  
+Actividad profesional registrada a nombre de  
 **Theodore Albert Francis Taylor**  
 Autónomo en España
