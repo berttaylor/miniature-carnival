@@ -1,6 +1,6 @@
-# Bert Taylor
+# Bertie Taylor
 
-### Software Engineer · Python · Backend · APIs
+## Software Engineer · Python · Backend · APIs
 
 Autónomo en España  
 Cataluña · Trabajo remoto
@@ -8,9 +8,6 @@ Cataluña · Trabajo remoto
 Ingeniero de software autónomo especializado en Python, backend, integraciones API y arquitectura de sistemas.
 
 Trabajo con empresas internacionales y estoy desarrollando también mi actividad profesional en el mercado español.
-<p style="margin-top:20px;">
-<a href="mailto:taftaylor@gmail.com" style="background:#2b7de9;color:white;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600;">Contactar</a>
-</p>
 
 ---
 
