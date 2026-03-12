@@ -30,7 +30,7 @@ Celery · HTMX · Integraciones SaaS · Automatización
 
 ## Experiencia profesional
 
-### CybSafe — Senior Backend Engineer  
+### CybSafe - Senior Backend Engineer  
 2022 – Presente
 
 Empresa SaaS de ciberseguridad.
@@ -40,7 +40,7 @@ Empresa SaaS de ciberseguridad.
 - Implementación de un sistema de segmentación dinámica de usuarios para campañas y automatización  
 - Integraciones con plataformas como Slack, Microsoft Teams y servicios de Microsoft Security  
 
-### A Human Future — Software Engineer  
+### A Human Future - Software Engineer  
 2021 – 2022
 
 - Desarrollo de un CMS y constructor de encuestas utilizando Django y HTMX  
