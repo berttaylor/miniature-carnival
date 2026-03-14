@@ -80,7 +80,7 @@ Cataluña, España
 
 ## Contacto
 
-Email: taftaylor@gmail.com  
+Email: bertie.taylor.dev@gmail.com  
 GitHub: https://github.com/bertietaylor  
 LinkedIn: https://www.linkedin.com/in/bertie-taylor-70965569  
 
