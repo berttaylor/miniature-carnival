@@ -75,11 +75,13 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
         <p class="meta">Answers human-risk questions and generates security-awareness learning content for CybSafe's customers.</p>
         <ul>
           <li><b>Made it cheaper and faster.</b> Moved Signal's decision steps to faster models: about half the cost per answer and a third less latency, at near-parity quality in offline evals.</li>
-          <li><b>Lead its evaluation work.</b> Online scoring of live conversations, offline evals in CI on every PR, and LLM judges checked against human labels, built on Arize Phoenix and OpenTelemetry. The evals caught a model upgrade that would have broken answers before it shipped.</li>
-          <li><b>Made the evals worth running.</b> Profiling showed Signal's own multi-call answering, not the judges, drove the cost and time. Fixing that and parallelising the judges took them from too slow for CI to running on every change.</li>
-          <li><b>Built learning-module generation with the people who write them.</b> I read the existing modules, sat with the content team to get their rules out of their heads, and turned that into a feature that builds modules, quizzes and images from a customer's own documents.</li>
-          <li><b>Guardrails.</b> Context sanitisation before untrusted documents reach other LLM calls, and a refusal judge I retuned from 52% to 98% precision.</li>
+          <li><b>Lead its evaluation work.</b> Built on Arize Phoenix with OpenTelemetry tracing: online scoring of live conversations, offline evals in CI comparing each branch against main, and LLM judges aligned against human-labelled datasets. The evals caught a model upgrade that dropped test-set answer accuracy from 93% to 33%; it shipped only once restored to 93%.</li>
+          <li><b>Made the evals cheap enough to run on every PR.</b> Profiling showed Signal's own multi-call answering, not the judges, drove most of the cost and time. Fixing that, and parallelising judge calls (a full judge run went from 69 to 22 minutes), moved evals from occasional to CI.</li>
+          <li><b>Tested the judges themselves.</b> Curated human-labelled datasets for the judges; refusal-detection precision rose from 52% to 98% on a 73-example tuning set, so far fewer valid answers were wrongly dropped from quality scores.</li>
+          <li><b>Built learning-module generation with the people who write them.</b> I read the existing modules, sat with the content team to get their rules out of their heads, and turned that into a feature that builds structured modules, quizzes and images from a customer's own documents, using RAG over PostgreSQL vector storage.</li>
+          <li><b>Guardrails.</b> A refusal judge on model output, and sanitisation of ingested context before it reaches downstream LLM calls, to limit prompt injection.</li>
         </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">OpenAI</span><span class="tag">Arize Phoenix</span><span class="tag">OpenTelemetry</span><span class="tag">LLM-as-judge</span><span class="tag">RAG</span><span class="tag">pgvector</span></div>
       </div>
     </div>
   </section>
@@ -98,6 +100,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
           <li><b>Run as a product:</b> per-visitor and daily cost caps so a search costs about four cents, cookieless ad attribution, and Meta ad tests to find the hook that works.</li>
         </ul>
         <p class="meta" style="margin:14px 0 0"><b style="color:var(--ink)">Under the hood:</b> FastAPI with server-rendered pages and no client JavaScript; PostgreSQL with pgvector for hybrid (keyword plus embedding) search; product feeds from Spanish retailers via affiliate networks, refreshed by a script that swaps the production table; a rate limiter keyed on a salted visitor hash so no address is stored; deployed as a Docker container on my own Coolify server.</p>
+        <p class="meta" style="margin:10px 0 0"><b style="color:var(--ink)">Version one (2025):</b> Qubi, a chat-based gift genie on LangGraph, LangChain, FastAPI and AWS with managed PostgreSQL, built to learn agentic LLM workflows hands-on. It taught me to save LLM calls for what needs them: rule-based chat gathered preferences and code-based checks replaced model calls. The rebuild keeps that lesson and drops the chat for a short form people can actually answer.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL + pgvector</span><span class="tag">OpenAI</span><span class="tag">LLM-as-judge</span><span class="tag">Docker</span><span class="tag">Coolify</span></div>
       </div>
     </article>
@@ -115,20 +118,23 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
         <p class="meta">Security-awareness SaaS. One of 11 engineers, kept on through several restructurings.</p>
         <ul>
           <li>Product owner and core engineer for Signal (above).</li>
-          <li>Designed the event-driven workflow engine (Django, Celery): about 740,000 triggers a day for about 145,000 enrolled users.</li>
+          <li>Designed the event-driven trigger and workflow engine in Django and Celery, after researching established engines. It now handles about 740,000 trigger events a day and 15,000–55,000 step changes per weekday for about 145,000 enrolled users. Modelled step relationships, validation and execution state across frontend and backend.</li>
+          <li>Fixed scaling bottlenecks as usage grew: one Celery task per workflow instead of per user stopped large workflows flooding the queue, and bulk enrolment cut a 5,000-user benchmark from 110,005 database queries to 14, ending the timeouts.</li>
           <li>Worked out how phishing simulations <i>should</i> behave across randomised, overlapping, multi-year campaigns, published it for customers in the help centre, then rebuilt the engine to match. The recurring bugs stopped.</li>
           <li>Integrations with Slack, Microsoft Teams and Microsoft security platforms; dynamic user segmentation for campaigns.</li>
           <li>Full-stack features in Shape Up cycles, including TypeScript and React.</li>
+          <li>Set up isolated Docker environments so several Claude Code agents can develop and QA in parallel.</li>
         </ul>
+        <div class="tags"><span class="tag">Django</span><span class="tag">Celery</span><span class="tag">PostgreSQL</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Docker</span><span class="tag">Buildkite</span><span class="tag">Sentry</span><span class="tag">Grafana</span></div>
       </div>
     </div>
     <div class="role">
       <h3>Software Engineer · A Human Future</h3><span class="when">Jan 2021 – Apr 2022 · Remote</span>
-      <div class="detail"><ul><li>A Django and HTMX CMS and survey builder, and lead matching, scoring and Stripe payments for a price-comparison platform.</li></ul></div>
+      <div class="detail"><ul><li>Built a CMS and survey builder with complex hierarchical structures in Django and HTMX.</li><li>Core features for a price-comparison platform: lead matching and scoring, user accounts, listings and Stripe payments.</li></ul></div>
     </div>
     <div class="role">
       <h3>Before software</h3><span class="when">2014 – 2021</span>
-      <div class="detail"><p class="meta" style="margin:0">Three years in B2B software sales (Darktrace, eSight Energy, Iansyst), then teaching English in Spain while I learned to code. Sales is why I care whether what I build is worth building.</p></div>
+      <div class="detail"><p class="meta" style="margin:0">Three years in B2B software sales (Darktrace, eSight Energy, Iansyst), including £510,000 of new business closed at Darktrace in under a year, then teaching English in Spain while I learned to code. Sales is why I care whether what I build is worth building.</p></div>
     </div>
   </section>
 
@@ -138,7 +144,8 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <dt>Backend</dt><dd>Python, Django, Django REST Framework, FastAPI, Celery, PostgreSQL (incl. pgvector)</dd>
       <dt>AI</dt><dd>LLM evaluation (online, offline in CI, LLM-as-judge), Arize Phoenix, OpenTelemetry, RAG, guardrails, OpenAI and Anthropic APIs, Claude Code</dd>
       <dt>Frontend</dt><dd>TypeScript, React, HTMX</dd>
-      <dt>Infrastructure</dt><dd>AWS, Docker, Coolify, Buildkite, Grafana, Sentry</dd>
+      <dt>Infrastructure</dt><dd>AWS (Cloud Practitioner), Docker, Coolify, Buildkite, Grafana, Sentry, Git</dd>
+      <dt>Integrations</dt><dd>Slack API, Microsoft Teams and Microsoft security APIs, Stripe</dd>
     </dl>
   </section>
 
