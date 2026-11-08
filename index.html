@@ -63,7 +63,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   <header>
     <div class="kicker">Product Engineer · Barcelona · Remote</div>
     <h1>I build AI products people actually use, and prove they work.</h1>
-    <p class="lede">I'm the <b>product owner and a core engineer for Signal</b>, CybSafe's AI assistant. I talk to the people who use what I build, decide what's worth building, ship it across the stack, and measure it with evals. In my spare time I'm launching <b>QuedarBien</b>, an AI gift finder for Spain.</p>
+    <p class="lede">I'm the <b>product owner and a core engineer for Signal</b>, CybSafe's AI assistant. I talk to the people who use what I build, decide what's worth building, ship it across the stack, and measure it with evals. I'm also launching <b>QuedarBien</b>, an AI gift finder for Spain.</p>
     <div class="cta"><a class="btn primary" href="#contact">Get in touch</a><a class="btn" href="https://quedarbien.es">See QuedarBien ↗</a><a class="btn" href="https://github.com/berttaylor">GitHub ↗</a></div>
   </header>
 
@@ -97,13 +97,13 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
           <li><b>Evaluated, not vibed:</b> 20 realistic personas, answered the way real shoppers fill in forms (with plenty of "don't know"), scored by LLM judges each time the engine changes.</li>
           <li><b>Run as a product:</b> per-visitor and daily cost caps so a search costs about four cents, cookieless ad attribution, and Meta ad tests to find the hook that works.</li>
         </ul>
-        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL + pgvector</span><span class="tag">OpenAI</span><span class="tag">LLM-as-judge</span><span class="tag">Docker</span></div>
+        <p class="meta" style="margin:14px 0 0"><b style="color:var(--ink)">Under the hood:</b> FastAPI with server-rendered pages and no client JavaScript; PostgreSQL with pgvector for hybrid (keyword plus embedding) search; product feeds from Spanish retailers via affiliate networks, refreshed by a script that swaps the production table; a rate limiter keyed on a salted visitor hash so no address is stored; deployed as a Docker container on my own Coolify server.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL + pgvector</span><span class="tag">OpenAI</span><span class="tag">LLM-as-judge</span><span class="tag">Docker</span><span class="tag">Coolify</span></div>
       </div>
     </article>
     <div class="grid">
-      <div class="card"><h3>Resume Manager</h3><p>A CV builder with an AI assistant that edits through tools I designed for a model to drive: small id-addressed edits, a "look at the page" tool that renders a screenshot, and search over your documents. Every change is snapshotted and undoable. Node, Postgres, Puppeteer.</p></div>
       <div class="card"><h3><a href="https://berttaylor.github.io/elizita/">Elizita ↗</a></h3><p>ELIZA (1966) rebuilt faithfully, with each descendant up to A.L.I.C.E. as a swappable rule file, and a "show workings" view explaining every reply. Built for fun.</p></div>
-      <div class="card"><h3><a href="https://github.com/berttaylor/pipecat-scheduling-assistant">Voice scheduling agent ↗</a></h3><p>A real-time voice agent on Pipecat: speech-to-text, an LLM and text-to-speech over WebRTC.</p></div>
+      <div class="card"><h3><a href="https://github.com/berttaylor/dermline">Dermline ↗</a></h3><p>A voice agent that answers the phone for a dermatology clinic and books appointments. I measured what makes calls feel slow, and found the fastest setups cut callers off mid-date of birth; routing turns with a local decision model fixed that. Pipecat, OpenAI, Deepgram.</p></div>
     </div>
   </section>
 
