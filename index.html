@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bertie Taylor · Product Engineer</title>
+<meta name="description" content="Bertie Taylor, product engineer near Barcelona. I own AI features end to end: talking to users, deciding what to build, shipping across the stack and proving it works with evals.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23ea580c'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='white'>BT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf7;--panel:#fff;--ink:#16181d;--muted:#5d6470;--line:#e7e4dd;--accent:#ea580c;--accent-soft:#fff1e7;--code:#f3f1ec}
+@media (prefers-color-scheme:dark){:root{--bg:#111316;--panel:#181b20;--ink:#eceef2;--muted:#9aa3ae;--line:#2a2f37;--accent:#fb923c;--accent-soft:#2a1d14;--code:#1f2329}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:22px;align-items:center;padding:22px 0;font-size:15px}
+nav .me{font-weight:700;margin-right:auto;text-decoration:none}
+nav a{text-decoration:none;color:var(--muted)}
+header{padding:56px 0 40px}
+.kicker{font:500 13px/1 "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.06em;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,58px);line-height:1.05;letter-spacing:-.03em;margin:14px 0 18px}
+.lede{font-size:20px;color:var(--muted);max-width:640px;margin:0}
+.lede b{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--panel);text-decoration:none;font-weight:500;font-size:15px}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.primary:hover{color:var(--bg);opacity:.9}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font:500 13px/1 "JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 26px}
+h3{font-size:22px;letter-spacing:-.01em;margin:0 0 4px}
+.meta{color:var(--muted);font-size:15px;margin-bottom:12px}
+ul{padding-left:20px;margin:10px 0}
+li{margin:6px 0}
+li::marker{color:var(--accent)}
+.feature{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.feature img{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
+.feature .body{padding:24px 26px 22px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tag{font:13px/1 "JetBrains Mono",monospace;background:var(--code);padding:6px 8px;border-radius:6px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card h3{font-size:18px}
+.card p{margin:6px 0 0;color:var(--muted);font-size:15.5px}
+.role{display:grid;grid-template-columns:1fr auto;gap:2px 16px;margin-bottom:34px}
+.role .when{color:var(--muted);font-size:15px;white-space:nowrap}
+.role .detail{grid-column:1/-1}
+.callout{background:var(--accent-soft);border-radius:12px;padding:14px 18px;margin:14px 0}
+.skills{display:grid;grid-template-columns:150px 1fr;gap:10px 18px;font-size:15.5px}
+.skills dt{color:var(--muted)}
+.skills dd{margin:0}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:640px){.role{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.skills dt{margin-top:8px}nav a:not(.me){display:none}header{padding-top:28px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a class="me" href="#">Bertie Taylor</a><a href="#work">Work</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+
+  <header>
+    <div class="kicker">Product Engineer · Barcelona · Remote</div>
+    <h1>I build AI products people actually use, and prove they work.</h1>
+    <p class="lede">I'm the <b>product owner and a core engineer for Signal</b>, CybSafe's AI assistant. I talk to the people who use what I build, decide what's worth building, ship it across the stack, and measure it with evals. In my spare time I'm launching <b>QuedarBien</b>, an AI gift finder for Spain.</p>
+    <div class="cta"><a class="btn primary" href="#contact">Get in touch</a><a class="btn" href="https://quedarbien.es">See QuedarBien ↗</a><a class="btn" href="https://github.com/berttaylor">GitHub ↗</a></div>
+  </header>
+
+  <section id="work">
+    <h2>What I'm working on</h2>
+    <div class="role">
+      <h3>Signal, CybSafe's AI assistant</h3><span class="when">2026 – now</span>
+      <div class="detail">
+        <p class="meta">Answers human-risk questions and generates security-awareness learning content for CybSafe's customers.</p>
+        <ul>
+          <li><b>Made it cheaper and faster.</b> Moved Signal's decision steps to faster models: about half the cost per answer and a third less latency, at near-parity quality in offline evals.</li>
+          <li><b>Lead its evaluation work.</b> Online scoring of live conversations, offline evals in CI on every PR, and LLM judges checked against human labels, built on Arize Phoenix and OpenTelemetry. The evals caught a model upgrade that would have broken answers before it shipped.</li>
+          <li><b>Made the evals worth running.</b> Profiling showed Signal's own multi-call answering, not the judges, drove the cost and time. Fixing that and parallelising the judges took them from too slow for CI to running on every change.</li>
+          <li><b>Built learning-module generation with the people who write them.</b> I read the existing modules, sat with the content team to get their rules out of their heads, and turned that into a feature that builds modules, quizzes and images from a customer's own documents.</li>
+          <li><b>Guardrails.</b> Context sanitisation before untrusted documents reach other LLM calls, and a refusal judge I retuned from 52% to 98% precision.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <article class="feature">
+      <a href="https://quedarbien.es"><img src="img/quedarbien.jpg" alt="QuedarBien home page: 'El regalo que de verdad va a usar'" width="1600" height="1000" loading="lazy"></a>
+      <div class="body">
+        <h3><a href="https://quedarbien.es">QuedarBien</a></h3>
+        <div class="meta">An AI gift finder for Spain · live at quedarbien.es · launching for Christmas 2026</div>
+        <p>Most gifts end up in a drawer. Research on gift-giving says recipients value how much they <i>use</i> a gift, not the moment they open it. So QuedarBien asks what someone does on a normal day and what you always see them with, then finds the premium version of something they already use, at a price they'd never pay for themselves.</p>
+        <ul>
+          <li><b>The engine:</b> LLM steps work out the objects a person uses every day and what a real upgrade looks like, hybrid search finds candidates in a 220,000-product affiliate catalogue, and one batched scoring call ranks them on use, upgrade and how known the brand is.</li>
+          <li><b>Evaluated, not vibed:</b> 20 realistic personas, answered the way real shoppers fill in forms (with plenty of "don't know"), scored by LLM judges each time the engine changes.</li>
+          <li><b>Run as a product:</b> per-visitor and daily cost caps so a search costs about four cents, cookieless ad attribution, and Meta ad tests to find the hook that works.</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL + pgvector</span><span class="tag">OpenAI</span><span class="tag">LLM-as-judge</span><span class="tag">Docker</span></div>
+      </div>
+    </article>
+    <div class="grid">
+      <div class="card"><h3>Resume Manager</h3><p>A CV builder with an AI assistant that edits through tools I designed for a model to drive: small id-addressed edits, a "look at the page" tool that renders a screenshot, and search over your documents. Every change is snapshotted and undoable. Node, Postgres, Puppeteer.</p></div>
+      <div class="card"><h3><a href="https://berttaylor.github.io/elizita/">Elizita ↗</a></h3><p>ELIZA (1966) rebuilt faithfully, with each descendant up to A.L.I.C.E. as a swappable rule file, and a "show workings" view explaining every reply. Built for fun.</p></div>
+      <div class="card"><h3><a href="https://github.com/berttaylor/pipecat-scheduling-assistant">Voice scheduling agent ↗</a></h3><p>A real-time voice agent on Pipecat: speech-to-text, an LLM and text-to-speech over WebRTC.</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="role">
+      <h3>Senior Engineer · CybSafe</h3><span class="when">Apr 2022 – now · Remote</span>
+      <div class="detail">
+        <p class="meta">Security-awareness SaaS. One of 11 engineers, kept on through several restructurings.</p>
+        <ul>
+          <li>Product owner and core engineer for Signal (above).</li>
+          <li>Designed the event-driven workflow engine (Django, Celery): about 740,000 triggers a day for about 145,000 enrolled users.</li>
+          <li>Worked out how phishing simulations <i>should</i> behave across randomised, overlapping, multi-year campaigns, published it for customers in the help centre, then rebuilt the engine to match. The recurring bugs stopped.</li>
+          <li>Integrations with Slack, Microsoft Teams and Microsoft security platforms; dynamic user segmentation for campaigns.</li>
+          <li>Full-stack features in Shape Up cycles, including TypeScript and React.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="role">
+      <h3>Software Engineer · A Human Future</h3><span class="when">Jan 2021 – Apr 2022 · Remote</span>
+      <div class="detail"><ul><li>A Django and HTMX CMS and survey builder, and lead matching, scoring and Stripe payments for a price-comparison platform.</li></ul></div>
+    </div>
+    <div class="role">
+      <h3>Before software</h3><span class="when">2014 – 2021</span>
+      <div class="detail"><p class="meta" style="margin:0">Three years in B2B software sales (Darktrace, eSight Energy, Iansyst), then teaching English in Spain while I learned to code. Sales is why I care whether what I build is worth building.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+    <dl class="skills">
+      <dt>Backend</dt><dd>Python, Django, Django REST Framework, FastAPI, Celery, PostgreSQL (incl. pgvector)</dd>
+      <dt>AI</dt><dd>LLM evaluation (online, offline in CI, LLM-as-judge), Arize Phoenix, OpenTelemetry, RAG, guardrails, OpenAI and Anthropic APIs, Claude Code</dd>
+      <dt>Frontend</dt><dd>TypeScript, React, HTMX</dd>
+      <dt>Infrastructure</dt><dd>AWS, Docker, Coolify, Buildkite, Grafana, Sentry</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="font-size:20px;margin:0 0 18px">The best way to reach me is email: <a href="mailto:hello@bertietaylor.es">hello@bertietaylor.es</a></p>
+    <div class="cta" style="margin-top:0"><a class="btn" href="https://www.linkedin.com/in/bertie-taylor-70965569">LinkedIn ↗</a><a class="btn" href="https://github.com/berttaylor">GitHub ↗</a></div>
+  </section>
+
+  <footer>Bertie Taylor · Near Barcelona, Spain · English (native), Spanish (conversational)</footer>
+</div>
+</body>
+</html>
